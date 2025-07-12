@@ -1459,6 +1459,7 @@ a.logo {
   .analysis-float-imgs .f6 { width: 80px !important; }
   .analysis-float-imgs .f8 { width: 80px !important; }
   .analysis-float-imgs .f9 { width: 135px !important; }
+  .contact-container { flex-direction: column; }
 }
 /* 체크박스와 텍스트 가로 정렬, 텍스트는 기본, 사이즈 작게 */
 .checkbox-group label {
@@ -1476,7 +1477,7 @@ a.logo {
 }
 
   .contact-container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 32px;
     align-items: stretch;
     padding: 24px 8px;
