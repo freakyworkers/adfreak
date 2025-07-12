@@ -6,6 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(res => res.text())
       .then(data => {
         document.getElementById('header-include').innerHTML = data;
+
+        // 헤더 삽입 후, 미디어쿼리 스타일을 강제로 다시 추가
+        const style = document.createElement('style');
+        style.innerHTML = `
+        @media (max-width: 900px) {
+          .nav,
+          .buttons {
+            display: none !important;
+          }
+          .mobile-menu-icon {
+            display: block !important;
+          }
+        }`;
+        document.head.appendChild(style);
       });
   }
 });
