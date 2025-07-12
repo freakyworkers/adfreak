@@ -1427,6 +1427,36 @@ a.logo {
   .analysis-float-imgs .f8 { width: 80px !important; }
   .analysis-float-imgs .f9 { width: 135px !important; }
 }
+/* 체크박스와 텍스트 가로 정렬, 텍스트는 기본, 사이즈 작게 */
+.checkbox-group label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: normal;
+  font-size: 15px;
+  gap: 8px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+.checkbox-group input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+  .contact-container {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+    padding: 24px 8px;
+  }
+  .contact-left, .contact-form {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .contact-form {
+    margin: 0 auto;
+  }
 .exp-f1 {
     top: -130% !important;
     left: 6%;
@@ -1779,19 +1809,9 @@ a.logo {
     width: 70vw !important;
     max-width: 260px !important;
   }
+
+
 }
 
-/* 체크박스와 텍스트 가로 정렬, 텍스트는 기본, 사이즈 작게 */
-.checkbox-group label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-weight: normal;
-  font-size: 15px;
-  gap: 8px;
-  margin-bottom: 8px;
-  white-space: nowrap;
-}
-.checkbox-group input[type="checkbox"] {
-  margin-right: 4px;
-}
+
+
