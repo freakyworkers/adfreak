@@ -779,7 +779,11 @@ overflow-x: hidden;
 
 .problem-text h2 {
   font-size: 20px;
-
+  font-weight: 600;
+  line-height: 1.5;
+  color: #111;
+  position: relative;
+  z-index: 2;
   }
 
 .exp-f1 {
@@ -832,12 +836,12 @@ overflow-x: hidden;
         right: 5%;}
 
 
-.bbt1{top: -113%; left: 2%;}
-.bbt2{top: -182%; right: 18%;}
-.bbt3{top: -46%; right: 2%;}
-.bbt4{bottom: -90%; left: 0%;}
-.bbt5{bottom: -256%; right: 30%;}
-.bbt6{bottom: -159%; right: 5%;}
+.bbt1{top: -186%; left: 0%;}
+.bbt2{top: -283%; right: 10%;}
+.bbt3{top: -92%; right: 2%;}
+.bbt4{bottom: -132%; left: 0%;}
+.bbt5{bottom: -347%; right: 7%;}
+.bbt6{bottom: -227%; right: 5%;}
 
 .phone img {
     width: 180px;
