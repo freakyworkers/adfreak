@@ -602,7 +602,7 @@ color: #888;
 }
 
 .section-mockup h2 {
-font-size: 28px;
+font-size: 20px;
 margin: 10px 0;
 font-weight: bold;
 }
@@ -776,6 +776,7 @@ html, body {
 max-width: 100vw;
 overflow-x: hidden;
 }
+.place-hero-overlay h1 {font-size: 1.5rem;}
 
 .problem-text h2 {
   font-size: 20px;
@@ -820,8 +821,8 @@ overflow-x: hidden;
     top: -75%;
     left: 2%;}
 .bbbt2{    
-    top: -113%;
-    right: 18%;}
+    top: -107%;
+    right: 6%;}
 .bbbt3{    
     top: -46%;
     right: 2%;}
@@ -829,13 +830,16 @@ overflow-x: hidden;
      bottom: -44%;
      left: 0%;}
 .bbbt5{    
-     bottom: -95%;
-     right: 30%;}
+     bottom: -103%;
+     right: 7%;}
 .bbbt6{    
-        bottom: -68%;
+        bottom: -73%;
         right: 5%;}
+body > div.contact-container > div > div > div:nth-child(3) > div.banner-img > img:nth-child(1){display: none;}
 
+body > div.contact-container > div > div > div:nth-child(3) > div.banner-img > img:nth-child(3){display: none;}
 
+.banner-text h2{font-size : 25px;}
 .bbt1{top: -186%; left: 0%;}
 .bbt2{top: -283%; right: 10%;}
 .bbt3{top: -92%; right: 2%;}
@@ -912,7 +916,7 @@ padding-right : 20px;
       flex-direction: column;
       align-items: center;
       max-width : 100vw;
-      padding : 0px 20px 0px 20px;
+      padding : 850px 20px 0px 20px;
     }
 
     .left-panel,
@@ -965,7 +969,7 @@ text-align: center;
 
 .feature-title {
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -1495,7 +1499,7 @@ a.logo {
   100% { transform: translateY(0px); }
 }
 @media (max-width: 900px) {
-  .place-analysis-section { padding: 80px 0 80px 0; }
+  .place-analysis-section { padding: 80px 0 80px 0; margin-top: 80px; margin-bottom: 80px;}
   .analysis-title h2 { font-size: 1rem; }
   .analysis-float-imgs .f1 { width: 80px !important; }
   .analysis-float-imgs .f2 { width: 80px !important; }
