@@ -1,11 +1,14 @@
 // 모든 페이지에서 header.html을 동적으로 불러와서 #header-include에 삽입
-if (document.getElementById('header-include')) {
-  fetch('header.html')
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById('header-include').innerHTML = data;
-    });
-}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.getElementById('header-include')) {
+    fetch('/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-include').innerHTML = data;
+      });
+  }
+});
 
 function toggleMenu() {
     const menu = document.getElementById("mobileMenu");
