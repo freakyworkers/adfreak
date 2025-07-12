@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미션 페이지</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <!-- 로고 -->
+        <a href="index.html" class="logo"><span class="ad">AD</span> <span class="freak">FREAK</span></a>
+
+    <!-- PC 메뉴 -->
+    <nav class="nav">
+          <a href="place.html">플레이스</a>
+      <a href="experience.html">체험단</a>
+      <a href="performance.html">퍼포먼스</a>
+    </nav>
+
+    <!-- 버튼 -->
+    <div class="buttons">
+      <a href="contact.html" class="btn">문의하기</a>
+      <a href="#product" class="btn">상품소개</a>
+    </div>
+
+    <!-- 모바일 메뉴 버튼 -->
+    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- 모바일 전용 메뉴 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="place.html">플레이스</a>
+    <a href="experience.html">체험단</a>
+    <a href="performance.html">퍼포먼스</a>
+    <a href="contact.html">문의하기</a>
+    <a href="#product">상품소개</a>
+  </div>
+</header>
+
+
+<!--메인 히어로섹션-->
+<section class="hero-section">
+  <div class="hero-content-wrapper">
+    <div class="hero-text">
+      <h1>나의 브랜드, 가게 올인원 마케팅<br>온라인·오프라인 전방위로 노출시켜드립니다</h1>
+      <p>– 퍼포먼스마케팅, 블로그, 네이버 플레이스, 인플루언서, 리워드앱까지 –</p>
+      <div class="hero-buttons">
+        <a href="/files/company-profile.pdf" class="hero-btn" download>상품소개서</a>
+        <a href="contact.html" class="hero-btn" target="_blank">문의하기</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="main_img/m_m1.png" alt="핸드폰 목업" class="phone-img" />
+    </div>
+  </div>
+  <div class="scroll-indicator">
+<p class="scroll-text">Scroll</p>
+    <span></span>
+  </div>
+</section>
+
+
+<!--문제섹션-->
+<section class="problem-section">
+  <div class="problem-container">
+    <div class="problem-bubbles">
+      <span class="bubble fade-in bbt1">키워드 검색 상위 노출이 안돼요</span>
+      <span class="bubble fade-in bbt2">방문 고객을 늘리고 싶어요</span>
+      <span class="bubble fade-in bbt3">플레이스 검색 상단 노출되고 싶어요</span>
+      <span class="bubble fade-in bbt4">제품, 서비스 인지도를 높이고 싶어요</span>
+      <span class="bubble fade-in bbt5">대행사의 트래픽 광고가 효과 없었어요</span>
+      <span class="bubble fade-in bbt6">어뷰징이 걱정이에요.</span>
+    </div>
+    <div class="problem-text">
+          <h2>이런 문제, 많이 고민해 보셨죠?<br><strong id="typing-effect" data-typing-text="애드프릭에서 해결해드리겠습니다.">애드프릭에서 해결해드리겠습니다.</strong></h2>
+    </div>
+  </div>
+</section>
+
+<div class="logo-section">
+  <h2>키워드 검색 상위노출</br>매장,브랜드,제품,서비스 신뢰도를 의미합니다.</h2>
+  <p>아무리 좋아도 내 브랜드와 제품이 고객에게</br>제대로 노출되지 않는다면 아무 의미가 없습니다.</p>
+</div>
+
+
+<!--서비스 설명 1 -->
+<section class="ad-section ad-section-1 fade-trigger">
+  <div class="ad-inner">
+    <div class="ad-left fade-item fade-delay-1">
+      <h3>데이터 기반 실 사용자를 타겟으로<br>참여율 높은 보상형 광고를 제공해요</h3>
+    </div>
+    <div class="ad-right">
+      <div class="phone fade-item fade-delay-2">
+        <img src="main_img/m_s3_1.png" alt="퀴즈리워드1">
+      </div>
+      <div class="phone fade-item fade-delay-3">
+        <img src="main_img/m_s3_2.png" alt="퀴즈리워드2">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--서비스 설명 2 -->
+<section class="ad-section ad-section-2 fade-trigger">
+  <div class="ad-inner">
+    <div class="ad-left fade-item fade-delay-1">
+      <h3>플레이스,카카오맵,카카오페이 등<br>CPA 부터 트래픽 상승을 위한 CPQ 까지</h3>
+    </div>
+    <div class="ad-right">
+      <div class="phone fade-item fade-delay-2">
+        <img src="main_img/m_s4_1.png" alt="퀴즈리워드1">
+      </div>
+      <div class="phone fade-item fade-delay-3">
+        <img src="main_img/m_s4_2.png" alt="퀴즈리워드2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--서비스 설명 3 -->
+<section class="ad-section ad-section-3 fade-trigger">
+  <div class="ad-inner">
+    <div class="ad-left fade-item fade-delay-1">
+      <h3>다양한 채널의 전문 인플루선서 연계<br>블로그,인스타그램,유튜브 체험단</h3>
+    </div>
+    <div class="ad-right">
+      <div class="phone fade-item fade-delay-2">
+        <img src="main_img/m_s5_1.png" alt="퀴즈리워드1">
+      </div>
+      <div class="phone fade-item fade-delay-3">
+        <img src="main_img/m_s5_2.png" alt="퀴즈리워드2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--서비스 설명 4 -->
+<section class="ad-section ad-section-4 fade-trigger">
+  <div class="ad-inner">
+    <div class="ad-left fade-item fade-delay-1">
+      <h3>단순한 광고 운영을 넘어, 콘텐츠 기획·제작까지 <br>최소비용으로 최대 성과를 이끌어내는 퍼포먼스 마케팅</h3>
+    </div>
+    <div class="ad-right">
+      <div class="phone fade-item fade-delay-2">
+        <img src="main_img/ps2.png" alt="퀴즈리워드1">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 로고 슬라이더 -->
+<div class="logo-section">
+  <h2>500개 이상의 프리미엄 매체 동시 광고</h2>
+  <p>프리키 AD의 리워드 캠페인을 통해 앱테크, 금융, 생활 앱 등 500여개 앱 내 동시 광고 진행</p>
+  <div class="logo-slider-wrapper">
+    <div class="logo-slider">
+          <img src="reward_logo/image 4.png">
+          <img src="reward_logo/image 5.png">
+          <img src="reward_logo/image 6.png">
+          <img src="reward_logo/image 7.png">
+          <img src="reward_logo/image 8.png">
+          <img src="reward_logo/image 9.png">
+          <img src="reward_logo/image 10.png">
+          <img src="reward_logo/image 11.png">
+          <img src="reward_logo/image 12.png">
+          <img src="reward_logo/image 13.png">
+          <img src="reward_logo/image 14.png">
+          <img src="reward_logo/image 15.png">
+          <img src="reward_logo/image 16.png">
+          <img src="reward_logo/image 17.png">
+          <img src="reward_logo/image 18.png">
+          <img src="reward_logo/image 19.png">
+          <img src="reward_logo/image 20.png">
+          <img src="reward_logo/image 21.png">
+          <img src="reward_logo/image 22.png">
+          <img src="reward_logo/image 23.png">
+          <img src="reward_logo/image 24.png">
+          <img src="reward_logo/image 25.png">
+          <img src="reward_logo/image 26.png">
+          <img src="reward_logo/image 27.png">
+          <img src="reward_logo/image 28.png">
+          <img src="reward_logo/image 29.png">
+    </div>
+  </div>
+</div>
+
+<!-- 메인 섹션 -->
+<div class="section1">
+  <div class="left-panel">
+    <div class="header-text">
+      <h2>어떤 업종이든 원하는 키워드<br>상위노출부터 유입률 상승</h2>
+      <p>브랜드, 매장, 제품, 서비스 현황 분석 및 키워드 분석<br>트래픽 발생을 위한 리워드 형태의 광고부터<br>블로그 배포, 인플루언서 체험단 연계</p>
+    </div>
+    <div class="button-grid">
+      <button class="mission-btn active" data-target="place">
+        <div class="mission-tag">CPA</div>
+        <div class="mission-title">플레이스 저장</div>
+      </button>
+      <button class="mission-btn" data-target="quiz">
+        <div class="mission-tag">CPQ</div>
+        <div class="mission-title">플레이스 퀴즈</div>
+      </button>
+      <button class="mission-btn" data-target="shoppingquiz">
+        <div class="mission-tag">CPQ</div>
+        <div class="mission-title">쇼핑 퀴즈</div>
+      </button>
+      <button class="mission-btn" data-target="storezzim">
+        <div class="mission-tag">CPQ</div>
+        <div class="mission-title">스토어 찜/알림</div>
+      </button>
+      <button class="mission-btn" data-target="blog">
+        <div class="mission-tag">블로그</div>
+        <div class="mission-title">기사형, 후기형</div>
+      </button>
+      <button class="mission-btn" data-target="influencer">
+        <div class="mission-tag">체험단</div>
+        <div class="mission-title">인플루언서 연계</div>
+      </button>
+    </div>
+  </div>
+
+  <div class="content-area">
+    <!-- 각 콘텐츠 세트 -->
+    <div id="place" class="content-set active">
+      <div class="phone-mockup delay-0"><img src="main_img/cpa1_1.png" /></div>
+      <div class="phone-mockup delay-1"><img src="main_img/cpa1_2.png" /></div>
+      <div class="phone-mockup delay-2"><img src="main_img/cpa1_3.png" /></div>
+      <div class="phone-mockup delay-3"><img src="main_img/cpa1_4.png" /></div>
+    </div>
+
+    <!-- 예시 콘텐츠들 (quiz, shoppingquiz 등) -->
+    <div id="quiz" class="content-set">
+      <div class="phone-mockup delay-0"><img src="main_img/cpq1_1.png" /></div>
+      <div class="phone-mockup delay-1"><img src="main_img/cpq1_2.png" /></div>
+      <div class="phone-mockup delay-2"><img src="main_img/cpq1_3.png" /></div>
+      <div class="phone-mockup delay-3"><img src="main_img/cpq1_4.png" /></div>
+    </div>
+
+    <div id="shoppingquiz" class="content-set">
+      <div class="phone-mockup delay-0"><img src="main_img/cpq2_1.png" /></div>
+      <div class="phone-mockup delay-1"><img src="main_img/cpq2_2.png" /></div>
+      <div class="phone-mockup delay-2"><img src="main_img/cpq2_3.png" /></div>
+      <div class="phone-mockup delay-3"><img src="main_img/cpq2_4.png" /></div>
+    </div>
+
+    <div id="storezzim" class="content-set">
+      <div class="phone-mockup delay-0"><img src="main_img/cpq3_1.png" /></div>
+      <div class="phone-mockup delay-1"><img src="main_img/cpq3_2.png" /></div>
+      <div class="phone-mockup delay-2"><img src="main_img/cpq3_3.png" /></div>
+      <div class="phone-mockup delay-3"><img src="main_img/cpq3_4.png" /></div>
+    </div>
+
+    <div id="blog" class="content-set">
+      <div class="phone-mockup delay-0"><img src="main_img/blg1.png" /></div>
+      <div class="phone-mockup delay-1"><img src="main_img/blg2.png" /></div>
+      <div class="phone-mockup delay-2"><img src="main_img/blg3.png" /></div>
+      <div class="phone-mockup delay-3"><img src="main_img/blg_4.png" /></div>
+    </div>
+
+    <div id="influencer" class="content-set">
+      <div class="phone-mockup delay-0"><img src="main_img/ins1.png" /></div>
+      <div class="phone-mockup delay-1"><img src="main_img/ins2.png" /></div>
+      <div class="phone-mockup delay-2"><img src="main_img/ins3.png" /></div>
+      <div class="phone-mockup delay-3"><img src="main_img/ins_4.png" /></div>
+    </div>
+  </div>
+</div>
+
+<section class="feature-section scroll-fade">
+  <div class="feature-title">
+        <p class="small-title">AD Freak</p>
+    <h2 class="main-title">차별화된 운영 구조</h2>
+  </div>
+  <div class="feature-list">
+    <div class="feature-item">
+      <h3>1일만에 광고 집행 가능</h3>
+      <p>캠페인 준비부터 노출까지 단 하루면 충분합니다</p>
+    </div>
+    <div class="feature-item">
+      <h3>맞춤 캠페인 분석</h3>
+      <p>고객사 브랜드 형태, 규모, 타겟에 맞는 광고 분석</p>
+    </div>
+    <div class="feature-item">
+      <h3>정밀한 타겟팅</h3>
+      <p>SNS, 키워드 분석을 통한 특정 관심사 대상 타겟</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-mockup">
+  <div class="text-container scroll-fade">
+        <p class="subtitle">AD Freak</p>
+    <h2>재계약률 90% 자신있습니다.</h2>
+    <p class="desc">
+      단순한 검색 순위 향상을 넘어, 실질적인 방문 유입과 구매 전환까지 이어지는<br>
+      전략적 마케팅 솔루션을 제공합니다.<br>
+      <br>
+      최적의 캠페인 분석으로 100~150% 이상의 효율을 달성한 성과 기반 운영으로,<br>
+      지금도 많은 고객들이 저희와 함께하고 있습니다.
+    </p>
+  </div>
+  <div class="mockup-container">
+    <img src="main_img/m_s3_2.png" class="mockup scroll-fade fade-delay-1" alt="mockup1">
+    <img src="main_img/m_sl1.png" class="mockup scroll-fade fade-delay-2" alt="mockup2">
+    <img src="main_img/blg4.png" class="mockup scroll-fade fade-delay-3" alt="mockup3">
+    <img src="main_img/ins4.png" class="mockup scroll-fade fade-delay-4" alt="mockup4">
+    <img src="main_img/m_sl2.png" class="mockup scroll-fade fade-delay-5" alt="mockup5">
+    <img src="main_img/m_sl3.png" class="mockup scroll-fade fade-delay-5" alt="mockup6">
+  </div>
+  </div>
+</section>
+
+<section class="section-partners">
+      <div class="partner-flex">
+  <div class="partner-text">
+          <p class="subtitle">AD Freak Client</p>
+    <h2>우리를 믿어준 파트너</h2>
+  </div>
+  <div class="partner-slider-wrapper">
+    <div class="partner-slider scroll-slide">
+            <img src="partner_logo/Group.png" alt="logo1">
+            <img src="partner_logo/Group 3.png" alt="logo2">
+            <img src="partner_logo/Group4.png" alt="logo3">
+            <img src="partner_logo/Group5.png" alt="logo4">
+            <img src="partner_logo/Group6.png" alt="logo5">
+            <img src="partner_logo/Group7.png" alt="logo6">
+            <img src="partner_logo/Group8.png" alt="logo7">
+            <img src="partner_logo/FRJ Jeans.png" alt="logo8">
+            <img src="partner_logo/KMAC2.png" alt="logo9">
+            <img src="partner_logo/logo_177X54 1.png" alt="logo10">
+            <img src="partner_logo/paar..png" alt="logo11">
+            <img src="partner_logo/image 31.png" alt="logo12">
+            <img src="partner_logo/지원아카데미 로고.png" alt="logo13">
+            <img src="partner_logo/물콩연구소 로고 2.png" alt="logo14">
+            <img src="partner_logo/자산 3 2.png" alt="logo15">
+            <img src="partner_logo/Group.png" alt="logo1-2">
+            <img src="partner_logo/Group 3.png" alt="logo2-2">
+            <img src="partner_logo/Group4.png" alt="logo3-2">
+            <img src="partner_logo/Group5.png" alt="logo4-2">
+            <img src="partner_logo/Group6.png" alt="logo5-2">
+            <img src="partner_logo/Group7.png" alt="logo6-2">
+            <img src="partner_logo/Group8.png" alt="logo7-2">
+            <img src="partner_logo/FRJ Jeans.png" alt="logo8-2">
+            <img src="partner_logo/KMAC2.png" alt="logo9-2">
+            <img src="partner_logo/logo_177X54 1.png" alt="logo10-2">
+            <img src="partner_logo/paar..png" alt="logo11-2">
+            <img src="partner_logo/image 31.png" alt="logo12-2">
+            <img src="partner_logo/지원아카데미 로고.png" alt="logo13-2">
+            <img src="partner_logo/물콩연구소 로고 2.png" alt="logo14-2">
+            <img src="partner_logo/자산 3 2.png" alt="logo15-2">
+          </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cta">
+  <div class="cta-content">
+        <p class="subtitle">AD Freak</p>
+    <h2>
+      수익으로 이어지는 차별화된 광고 효과<br>
+      프리키 AD와 함께라면 가능합니다.
+    </h2>
+    <a href="contact.html" class="cta-button">무료 상담 신청</a>
+  </div>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
