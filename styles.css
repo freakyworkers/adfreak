@@ -1277,6 +1277,21 @@ a.logo {
     border: 1.5px solid #2563eb;
     outline: none;
   }
+  .contact-form input[type="email"] {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 4px;
+  background: #fafbfc;
+  transition: border 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form input[type="email"]:focus {
+  border: 1.5px solid #2563eb;
+  outline: none;
+}
   .contact-form textarea {
     resize: vertical;
     min-height: 120px;
@@ -1764,4 +1779,19 @@ a.logo {
     width: 70vw !important;
     max-width: 260px !important;
   }
+}
+
+/* 체크박스와 텍스트 가로 정렬, 텍스트는 기본, 사이즈 작게 */
+.checkbox-group label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: normal;
+  font-size: 15px;
+  gap: 8px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+.checkbox-group input[type="checkbox"] {
+  margin-right: 4px;
 }

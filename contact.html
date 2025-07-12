@@ -49,6 +49,16 @@
         </div>
         <div class="banner-slide">
           <div class="banner-text">
+            <span>성과 중심의 마케팅</span>
+            <h2>퍼포먼스 마케팅</h2>
+            <a href="performance.html" class="banner-btn">자세히 보기 &rarr;</a>
+          </div>
+          <div class="banner-img">
+            <img src="main_img/meta.jpeg" alt="퍼포먼스" style="width:80px;">
+          </div>
+        </div>
+        <div class="banner-slide">
+          <div class="banner-text">
             <span>인플루언서 체험단 서비스</span>
             <h2>체험단 마케팅</h2>
             <a href="#" class="banner-btn">자세히 보기 &rarr;</a>
@@ -62,29 +72,63 @@
         <div class="banner-dots">
           <span class="dot active"></span>
           <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </div>
     </div>
     <form class="contact-form" id="contact-form">
-      <label>상호
+      <label>희망 서비스</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="service" value="SNS 광고 매체 운영(스폰서드 광고)"> SNS 광고 매체 운영(스폰서드 광고)</label>
+        <label><input type="checkbox" name="service" value="SNS 광고 소재 제작"> SNS 광고 소재 제작</label>
+        <label><input type="checkbox" name="service" value="플레이스 상위 노출"> 플레이스 상위 노출</label>
+        <label><input type="checkbox" name="service" value="체험단 마케팅"> 체험단 마케팅</label>
+        <label><input type="checkbox" name="service" value="블로그 마케팅"> 블로그 마케팅</label>
+        <label><input type="checkbox" name="service" value="리워드 광고"> 리워드 광고</label>
+      </div>
+
+      <label>희망 진행 일정</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="schedule" value="7일 이내"> 7일 이내</label>
+        <label><input type="checkbox" name="schedule" value="14일 이내"> 14일 이내</label>
+        <label><input type="checkbox" name="schedule" value="1달 이내"> 1달 이내</label>
+        <label><input type="checkbox" name="schedule" value="3달 이내"> 3달 이내</label>
+        <label><input type="checkbox" name="schedule" value="당장은 아니지만 상담 하고 싶어요."> 당장은 아니지만 상담 하고 싶어요.</label>
+      </div>
+
+      <label>월 광고 예산</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="budget" value="300만원 이하"> 300만원 이하</label>
+        <label><input type="checkbox" name="budget" value="400만원 초과 ~ 1천만원 이하"> 400만원 초과 ~ 1천만원 이하</label>
+        <label><input type="checkbox" name="budget" value="2천만원 초과 ~ 6천만원 이하"> 2천만원 초과 ~ 6천만원 이하</label>
+        <label><input type="checkbox" name="budget" value="6천만원 초과"> 6천만원 초과</label>
+      </div>
+
+      <label>상호/담당자명
         <input type="text" name="name" placeholder="상호/담당자명" required>
       </label>
       <label>연락처
-        <input type="text" name="phone" placeholder="010-0000-0000" required>
+        <input type="text" name="phone" id="phone" placeholder="010-0000-0000" required>
+      </label>
+      <label>이메일
+        <input type="email" name="email" id="email" placeholder="이메일 주소" required>
+      </label>
+      <label>광고 예정 상품
+        <input type="text" name="product" placeholder="브랜드/제품명, 상호명/제공서비스 등">
       </label>
       <label>문의내용
-        <textarea name="message" rows="6" placeholder="현재 진행 중인 마케팅, 목적, 특성, 출시 예정일, 정확한 예산 등을 적어주세요" required></textarea>
+        <textarea name="message" rows="6" placeholder="현재 진행 중인 마케팅, 목적, 특성, 출시 예정일 예산 이 외 궁금한 사항을 작성해주세요." required></textarea>
       </label>
       <div class="checkbox-group">
         <label class="checkbox-label">
           <input type="checkbox" name="privacy" required>
-          <span><b>[필수]</b> 개인정보수집 및 이용에 동의합니다.</span>
+          <span><b>[필수]</b> 개인정보 수집 및 이용에 동의합니다.</span>
         </label>
       </div>
       <button type="submit" class="contact-submit">문의하기</button>
     </form>
   </div>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html> 

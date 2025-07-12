@@ -311,14 +311,63 @@ document.addEventListener('DOMContentLoaded', function () {
   (function(){
     emailjs.init('mgXROKpth_F4zfpId'); // 본인 EmailJS Public Key 적용
   })();
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
+  // contact-form 체크박스 값 포함 EmailJS 전송
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    emailjs.sendForm('service_7v7ydgc', 'template_mgaehfc', this)
-      .then(function() {
-        alert('문의가 정상적으로 접수되었습니다!');
-        document.getElementById('contact-form').reset();
-      }, function(error) {
-        alert('오류가 발생했습니다. 다시 시도해 주세요.');
-      });
+
+    // 체크박스 값 모으기 함수
+    const getCheckedValues = (name) =>
+      Array.from(document.querySelectorAll(`input[name="${name}"]:checked`))
+        .map(cb => cb.value)
+        .join(', ');
+
+    const services = getCheckedValues('service');
+    const schedules = getCheckedValues('schedule');
+    const budgets = getCheckedValues('budget');
+
+    // 나머지 값
+    const name = this.name.value;
+    const phone = this.phone.value;
+    const email = this.email.value;
+    const product = this.product.value;
+    const message = this.message.value;
+
+    // EmailJS 전송 (새 템플릿 ID 사용)
+    emailjs.send('service_7v7ydgc', 'template_hb4qghe', {
+      name: name,
+      phone: phone,
+      email: email,
+      product: product,
+      message: message,
+      services: services,
+      schedules: schedules,
+      budgets: budgets
+    }, 'mgXROKpth_F4zfpId')
+    .then(function(response) {
+      alert('문의가 성공적으로 전송되었습니다!');
+      contactForm.reset();
+    }, function(error) {
+      alert('전송에 실패했습니다.');
+    });
   });
+}
+  
+// 연락처 입력 자동 하이픈 처리
+const phoneInput = document.getElementById('phone');
+if (phoneInput) {
+  phoneInput.addEventListener('input', function(e) {
+    let value = this.value.replace(/[^0-9]/g, ''); // 숫자만 남김
+    if (value.length < 4) {
+      this.value = value;
+    } else if (value.length < 8) {
+      this.value = value.slice(0, 3) + '-' + value.slice(3);
+    } else if (value.length <= 11) {
+      this.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
+    } else {
+      this.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
+    }
+  });
+}
   
