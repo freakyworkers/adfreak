@@ -776,6 +776,12 @@ html, body {
 max-width: 100vw;
 overflow-x: hidden;
 }
+
+.problem-text h2 {
+  font-size: 20px;
+
+  }
+
 .exp-f1 {
   top: -130% !important;
   left: 6%!important;
@@ -1812,7 +1818,7 @@ a.logo {
 
 @media (max-width: 768px) {
   .ad-section .ad-right .phone {
-    flex-basis: 45vw;
+    flex-basis: 40vw;
   }
   .ad-section .ad-right .phone img {
     width: 45vw;
