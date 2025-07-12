@@ -1,7 +1,44 @@
 function toggleMenu() {
     const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("show");
-  }
+    if (menu) {
+        menu.classList.toggle("show");
+        
+        // 메뉴가 열려있을 때 배경 스크롤 방지
+        if (menu.classList.contains("show")) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    }
+}
+
+// 모바일 메뉴 링크 클릭 시 메뉴 닫기
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+    const mobileMenu = document.getElementById("mobileMenu");
+    
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (mobileMenu && mobileMenu.classList.contains("show")) {
+                mobileMenu.classList.remove("show");
+                document.body.style.overflow = "";
+            }
+        });
+    });
+    
+    // 메뉴 외부 클릭 시 메뉴 닫기
+    document.addEventListener('click', function(e) {
+        const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+        const mobileMenu = document.getElementById("mobileMenu");
+        
+        if (mobileMenu && mobileMenu.classList.contains("show")) {
+            if (!mobileMenu.contains(e.target) && !mobileMenuIcon.contains(e.target)) {
+                mobileMenu.classList.remove("show");
+                document.body.style.overflow = "";
+            }
+        }
+    });
+});
   
     const buttons = document.querySelectorAll('.mission-btn');
     const contentSets = document.querySelectorAll('.content-set');
