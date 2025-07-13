@@ -4,6 +4,13 @@ body {
     padding: 0;
     margin: 0 auto;
   }
+
+  div, section, main, aside, header, footer {
+    outline: none;
+  }
+  div:focus, section:focus, main:focus, aside:focus, header:focus, footer:focus {
+    outline: none !important;
+  }
 /* 기본 헤더 스타일 */
 .header {
 position: fixed;

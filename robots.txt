@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /목업용이미지/
+Disallow: /reward_logo/
+Disallow: /place/
+Disallow: /partner_logo/
+Disallow: /exp_img/
+
+Allow: /
+
+Sitemap: https://adfreak.kr/sitemap.xml 
