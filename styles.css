@@ -1880,5 +1880,77 @@ a.logo {
   }
 }
 
+/* ===== Footer 스타일 (다크, 중앙정렬, SNS, 약관 등) ===== */
+.footer {
+  background: #181818;
+  color: #eee;
+  padding: 36px 0 18px 0;
+  font-size: 15px;
+  text-align: center;
+}
+.footer-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.footer-sns {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.footer-sns img {
+  width: 28px;
+  height: 28px;
+  filter: grayscale(1) brightness(2);
+  transition: filter 0.2s;
+}
+.footer-sns a:hover img {
+  filter: none;
+}
+.footer-contact {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.footer-contact a {
+  color: #4fc3f7;
+  text-decoration: underline;
+}
+.footer-info {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-copy {
+  color: #888;
+  font-size: 13px;
+  margin: 8px 0 0 0;
+}
+.footer-links {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.footer-links a {
+  color: #eee;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #4fc3f7;
+}
+@media (max-width: 600px) {
+  .footer-inner { max-width: 98vw; font-size: 13px; }
+  .footer-info { font-size: 12px; }
+  .footer-links { gap: 10px; }
+}
+
 
 
