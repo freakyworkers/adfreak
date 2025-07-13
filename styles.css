@@ -6,10 +6,12 @@ body {
   }
 
   div, section, main, aside, header, footer {
-    outline: none;
+    -webkit-user-modify: read-only;
+
   }
   div:focus, section:focus, main:focus, aside:focus, header:focus, footer:focus {
-    outline: none !important;
+    -webkit-user-modify: read-only;
+
   }
 /* 기본 헤더 스타일 */
 .header {
