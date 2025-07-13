@@ -362,6 +362,14 @@
   </div>
 </section>
 
+<div id="footer-include"></div>
+<script>
+  fetch('/footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-include').innerHTML = data;
+    });
+</script>
 
 
   <script src="script.js"></script>
