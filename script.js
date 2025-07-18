@@ -452,3 +452,29 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 300);
 });
   
+document.addEventListener('DOMContentLoaded', function() {
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+  // 헤더 버튼
+  var productBtn = document.getElementById('product-intro-btn');
+  if (productBtn) {
+    productBtn.addEventListener('click', function(e) {
+      if (isMobile()) {
+        e.preventDefault();
+        window.location.href = '/애드프릭 서비스소개서.pdf';
+      }
+    });
+  }
+  // 인덱스 히어로 버튼
+  var heroBtn = document.getElementById('product-intro-hero-btn');
+  if (heroBtn) {
+    heroBtn.addEventListener('click', function(e) {
+      if (isMobile()) {
+        e.preventDefault();
+        window.location.href = '/애드프릭 서비스소개서.pdf';
+      }
+    });
+  }
+});
+  
