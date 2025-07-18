@@ -398,7 +398,7 @@ if (contactForm) {
     const message = this.message.value;
 
     // EmailJS 전송 (새 템플릿 ID 사용)
-    emailjs.send('service_7v7ydgc', 'template_hb4qghe', {
+    emailjs.send('service_le3w6mh', 'template_hb4qghe', {
       name: name,
       phone: phone,
       email: email,
