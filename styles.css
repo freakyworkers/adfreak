@@ -1986,5 +1986,11 @@ a.logo {
   }
 }
 
+.top-btn {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  display: block !important;
+}
+
 
 
