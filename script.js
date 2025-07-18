@@ -435,18 +435,20 @@ if (phoneInput) {
 }
   
 document.addEventListener('DOMContentLoaded', function() {
-  const topBtn = document.getElementById('topBtn');
-  if (topBtn) {
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 200) {
-        topBtn.classList.add('show');
-      } else {
-        topBtn.classList.remove('show');
-      }
-    });
-    topBtn.addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
+  setTimeout(function() {
+    const topBtn = document.getElementById('topBtn');
+    if (topBtn) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) {
+          topBtn.classList.add('show');
+        } else {
+          topBtn.classList.remove('show');
+        }
+      });
+      topBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  }, 300);
 });
   
