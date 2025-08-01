@@ -131,6 +131,8 @@ overflow: hidden;
 .hero-content-wrapper {
 display: flex;
 align-items: center;
+width:1200px;
+margin:0 auto;
 justify-content: space-between;
 padding: 0 10%;
 flex-wrap: wrap;
@@ -879,6 +881,7 @@ padding-right : 20px;
 }
 
 .hero-content-wrapper {
+  width : 100%;
   flex-direction: column-reverse;
   text-align: center;
 }
